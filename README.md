@@ -1,6 +1,6 @@
 # README
 
-A minimal React.js boilerplate with Parcel bundler, including testing tools.
+A minimal React.js boilerplate with Parcel bundler, including testing tools and deployable on aws s3.
 
 ## Table of Contents
 
