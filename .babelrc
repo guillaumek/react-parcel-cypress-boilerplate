@@ -1,0 +1,35 @@
+{
+  env: {
+    test: {
+      plugins: []
+    }
+  },
+
+  presets: [
+    [
+      "env",
+      {
+        targets: {
+          browsers:
+            "last 2 Firefox versions, last 2 Chrome versions, last 2 Edge versions, last 2 Safari versions"
+        }
+      }
+    ],
+
+    "react"
+  ],
+  ignore: ["node_modules"],
+  plugins: [
+    "transform-class-properties",
+    "transform-object-rest-spread",
+    "babel-plugin-dynamic-import-node",
+    [
+      "transform-runtime",
+      {
+        polyfill: false,
+        regenerator: true,
+        helpers: false
+      }
+    ]
+  ]
+}
